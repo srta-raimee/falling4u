@@ -1,6 +1,0 @@
-train: fall_dataset_6040/images/train
-val: fall_dataset_6040/images/val
-nc: 2
-names:
-  - fall
-  - not fall
