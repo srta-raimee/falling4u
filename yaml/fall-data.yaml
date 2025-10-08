@@ -1,8 +1,0 @@
-path: .
-
-train: ../fall_dataset/images/train
-val: ../fall_dataset/images/val
-nc: 2
-names:
-  - fall
-  - not fall
