@@ -1,7 +1,7 @@
 import os
 import shutil
 
-# mandar os dados todos juntos para uma s pasta de imagens e uma de labels para reorganizar com metodos de validacao
+# mandar os dados todos juntos para uma so pasta de imagens e uma so de labels para reorganizar posteriormente com metodos de validacao
 def consolidate_and_rename():
     SOURCE_IMAGE_FOLDERS = [
         'fall_dataset/images/train',
