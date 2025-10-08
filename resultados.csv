@@ -1,0 +1,4 @@
+experimento,dataset,modelo,tempo_treino,tempo_validacao,mAP50_95,mAP50,precisao,recall
+split_7030_run1,fall-data7030.yaml,yolo11n.pt,00h 07m 3.21s,00h 00m 4.51s,0.6482,0.9115,0.9155,0.8817
+split_6040_run1,fall-data6040.yaml,yolo11n.pt,00h 06m 50.35s,00h 00m 4.53s,0.6580,0.8970,0.9649,0.8417
+split_8020_run1,fall-data8020.yaml,yolo11n.pt,00h 07m 58.27s,00h 00m 3.96s,0.6581,0.9129,0.9824,0.8509
