@@ -1,0 +1,5 @@
+experimento_base,k_folds,tempo_total,avg_mAP50_95,std_mAP50_95,avg_mAP50,std_mAP50,avg_precision,std_precision,avg_recall,std_recall
+kfold_kfold_dataset_5_5folds,5,00h 42m 22.89s,0.6204,0.1335,0.8844,0.1225,0.7531,0.3751,0.9234,0.0076
+kfold_kfold_dataset_10_10folds,10,01h 32m 0.98s,0.7207,0.0527,0.9557,0.0409,0.9452,0.0541,0.9164,0.0358
+kfold_kfold_dataset_15_15folds,15,02h 30m 10.81s,0.7332,0.0709,0.9662,0.0372,0.9466,0.0645,0.9488,0.0372
+kfold_kfold_dataset_20_20folds,20,03h 37m 6.36s,0.7412,0.0783,0.9636,0.0471,0.9378,0.0673,0.9522,0.0687

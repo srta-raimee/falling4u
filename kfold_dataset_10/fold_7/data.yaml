@@ -1,0 +1,5 @@
+path: /home/larissa.ragomes/Documents/falling4u/kfold_dataset_10/fold_7
+train: images/train
+val: images/val
+nc: 2
+names: ['fall', 'not fall']
