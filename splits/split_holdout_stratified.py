@@ -88,8 +88,8 @@ def create_stratified_holdout(input_dir, output_dir, validation_size):
 
 if __name__ == '__main__':
     INPUT_DIR = 'fall_dataset'
-    OUTPUT_DIR = 'fall_dataset_stratified_8020'
-    VALIDATION_SIZE = 0.2
+    OUTPUT_DIR = 'fall_dataset_stratified_6040'
+    VALIDATION_SIZE = 0.4
     
     create_stratified_holdout(
         input_dir=INPUT_DIR, 
