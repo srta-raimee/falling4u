@@ -1,0 +1,2 @@
+experimento_base,k_folds,tempo_total,avg_mAP50_95,std_mAP50_95,avg_mAP50,std_mAP50,avg_precision,std_precision,avg_recall,std_recall
+kfold_kfold_dataset_stratified_10_10folds,10,01h 32m 13.21s,0.6918,0.0656,0.9583,0.0394,0.9538,0.0366,0.9173,0.0581

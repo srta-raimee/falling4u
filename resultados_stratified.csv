@@ -1,0 +1,2 @@
+experimento,dataset,modelo,tempo_treino,tempo_validacao,mAP50_95,mAP50,precisao,recall
+split_8020_stratified_run1,./yaml/fall-data8020_stratified.yaml,yolo11n.pt,00h 13m 3.38s,00h 00m 7.45s,0.7116,0.9801,0.9721,0.9269

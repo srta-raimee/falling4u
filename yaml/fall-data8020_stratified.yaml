@@ -1,0 +1,8 @@
+path: .
+
+train: ../fall_dataset_stratified_8020/images/train
+val: ../fall_dataset_stratified_8020/images/val
+nc: 2
+names:
+  - fall
+  - not fall

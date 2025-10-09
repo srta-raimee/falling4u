@@ -1,0 +1,11 @@
+experimento_base,k_total,fold_num,mAP50_95,mAP50,precisao,recall
+kfold_kfold_dataset_stratified_10_10folds,10,1,0.7193,0.9692,0.9706,0.8603
+kfold_kfold_dataset_stratified_10_10folds,10,2,0.8110,0.9950,0.9921,1.0000
+kfold_kfold_dataset_stratified_10_10folds,10,3,0.7228,0.9884,0.9587,0.9519
+kfold_kfold_dataset_stratified_10_10folds,10,4,0.7319,0.9807,0.9771,0.9667
+kfold_kfold_dataset_stratified_10_10folds,10,5,0.6730,0.9654,0.8872,0.9653
+kfold_kfold_dataset_stratified_10_10folds,10,6,0.6763,0.9110,0.9252,0.8258
+kfold_kfold_dataset_stratified_10_10folds,10,7,0.6076,0.9800,0.9508,0.9197
+kfold_kfold_dataset_stratified_10_10folds,10,8,0.5647,0.8704,0.8972,0.8494
+kfold_kfold_dataset_stratified_10_10folds,10,9,0.6809,0.9290,0.9905,0.8680
+kfold_kfold_dataset_stratified_10_10folds,10,10,0.7306,0.9941,0.9892,0.9658
