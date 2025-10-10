@@ -1,21 +1,33 @@
+import os
 from ultralytics import YOLO
 from PIL import Image
 
-# 1. Carregue o seu modelo campeão
+# kfold stratified 10 folds - fold 2 model
 caminho_do_modelo = 'runs/detect/kfold_kfold_dataset_stratified_10_10folds_fold_2/weights/best.pt'
-modelo_campeao = YOLO(caminho_do_modelo)
+MODELO = YOLO(caminho_do_modelo)
 
-# 2. Escolha uma imagem para testar
-#    Pode ser qualquer imagem, até uma que não está no seu dataset.
-caminho_da_imagem = 'imgs_teste/morreu3.jpeg'
+pasta_de_entrada = 'imgs_teste'
+pasta_de_saida = 'resultados_predicao'
 
-# 3. Faça a predição
-results = modelo_campeao.predict(caminho_da_imagem)
+os.makedirs(pasta_de_saida, exist_ok=True)
 
-# 4. Visualize o resultado
-#    O YOLO vai desenhar as bounding boxes na imagem e mostrar para você.
-for r in results:
-    im_array = r.plot()  # plota as caixas na imagem
-    im = Image.fromarray(im_array[..., ::-1])  # Converte para formato de imagem
-    im.show() # Mostra a imagem
-    im.save('resultado_predicao3.jpg') # Salva a imagem com a predição
+for nome_arquivo in os.listdir(pasta_de_entrada):
+    if nome_arquivo.lower().endswith(('.png', '.jpg', '.jpeg')):
+        
+        caminho_da_imagem = os.path.join(pasta_de_entrada, nome_arquivo)
+        print(f"Processando a imagem: {caminho_da_imagem}...")
+
+        results = MODELO.predict(caminho_da_imagem)
+
+        for r in results:
+            im_array = r.plot()  # plota as caixas na imagem
+            im = Image.fromarray(im_array[..., ::-1])  # Converte para formato de imagem
+            
+            base, ext = os.path.splitext(nome_arquivo)
+            caminho_salvo = os.path.join(pasta_de_saida, f"{base}_predito{ext}")
+            
+            #im.show() 
+            im.save(caminho_salvo) # Salva a imagem com a predição
+            print(f"--> Resultado salvo em: {caminho_salvo}")
+
+print("\nProcesso concluído!")
