@@ -7,7 +7,7 @@ modelo_campeao = YOLO(caminho_do_modelo)
 
 # 2. Escolha uma imagem para testar
 #    Pode ser qualquer imagem, até uma que não está no seu dataset.
-caminho_da_imagem = 'caminho/para/uma/imagem_de_teste.jpg'
+caminho_da_imagem = 'imgs_teste/morreu3.jpeg'
 
 # 3. Faça a predição
 results = modelo_campeao.predict(caminho_da_imagem)
@@ -18,4 +18,4 @@ for r in results:
     im_array = r.plot()  # plota as caixas na imagem
     im = Image.fromarray(im_array[..., ::-1])  # Converte para formato de imagem
     im.show() # Mostra a imagem
-    im.save('resultado_predicao.jpg') # Salva a imagem com a predição
+    im.save('resultado_predicao3.jpg') # Salva a imagem com a predição
